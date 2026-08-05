@@ -1,54 +1,61 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Jul 29 16:15:51 2026
+# Student Information System
 
-@author: Ankitsinh
-"""
+# Create variables to store student information 
 
-
-    # Student Information System
+print("\n=======================================")
+print(f"         Student Inforamtion            ")
+print("=======================================\n")
 
 
+rollNo = int(input("Enter student Roll No : "))
+name = input("Enter student Name :  ")
+age = int(input("Enter student Age : "))
 
-def stu_information():
+
+# Storing marks for three different subjects
+print("\n=======================================")
+print(f"        Enter Subject Marks             ")
+print("=======================================\n")
     
-    print("\n======= Enter Student Inforamtion ======")
-    
-    rollNo = int(input("Enter student Roll No : "))
-    name = input("Enter student Name :  ")
-    age = int(input("Enter student Age : "))
+java = eval(input("Enter Java Marks: "))
+python = eval(input("Enter Python Marks: "))
+dbms = eval(input("Enter DBMS marks: "))
 
-    #------- Student Subject Marks ------------
-    print("\n===== Enter Subject Marks ======\n")
-    
-    java = eval(input("Enter Java Marks : "))
-    python = eval(input("Enter Python Marks : "))
-    dbms = eval(input("Enter DBMS marks : "))
 
-    # --------- Student Marks Calculation
+# Arithmetic Operations
 
-    if (java < 40 or python < 40 or dbms < 40):
-        print("\n Student Fail \n")
+# Calculating total marks and percentage
 
-    elif (java > 40 or python > 40 or dbms > 40):
-        
-        total = java + python + dbms
-        
-        percentage = (total / 3) * 100
-        
-        print("\n ----- Student Result -----\n")
-        print("Total Marks : ", total)
-        print("percentage is : ",percentage)
-        print("Student Pass.")
-    else :
-        print("invlaid marks !")
-            
-    print("------ Student Information --------")
-    print("Student RollNo: ", rollNo)
-    print("Student Name: ", name)
-    print("Studetn Age: ", age)
+totalMarks = java + python + dbms
+percentage = (totalMarks / 300) * 100
 
-stu_information()
+# Logical Operations & conditions
+
+if (java >= 40 and python >= 40 and dbms >= 40):
+    result = "Passed"
+
+elif (java < 40 or python < 40 or dbms < 40):
+    result = "Failed"
+
+else : 
+    print("Invalid Marks !)")
+
+
+# Formatted output
+
+print("\n=======================================")
+print(f"         Student Report Card            ")
+print("=======================================\n")
+print(f"Roll No      : {rollNo}")
+print(f"Name         : {name}")
+print(f"Age          : {age}")
+print(f"Total Marks  : {totalMarks}")
+print(f"Percentage   : {percentage:.2f}%")
+print(f"Result Status: {result}")
+print("\n=======================================")
+
+
+
 
 
 
