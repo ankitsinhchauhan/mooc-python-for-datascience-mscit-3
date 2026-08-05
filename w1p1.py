@@ -2,10 +2,7 @@
 
 # Create variables to store student information 
 
-print("\n=======================================")
-print(f"         Student Inforamtion            ")
-print("=======================================\n")
-
+print("\n---- Student Inforamtion System -----\n")
 
 rollNo = int(input("Enter student Roll No : "))
 name = input("Enter student Name :  ")
@@ -13,9 +10,8 @@ age = int(input("Enter student Age : "))
 
 
 # Storing marks for three different subjects
-print("\n=======================================")
-print(f"        Enter Subject Marks             ")
-print("=======================================\n")
+
+print("\n--------- Enter Subject Marks -------\n")
     
 java = eval(input("Enter Java Marks: "))
 python = eval(input("Enter Python Marks: "))
@@ -23,11 +19,11 @@ dbms = eval(input("Enter DBMS marks: "))
 
 
 # Arithmetic Operations
-
 # Calculating total marks and percentage
 
 totalMarks = java + python + dbms
 percentage = (totalMarks / 300) * 100
+
 
 # Logical Operations & conditions
 
