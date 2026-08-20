@@ -18,8 +18,9 @@ grade_list = []
 
 grade_dict = {'A': [], 'B': [], 'C': [], 'D': [], 'F': []}
 
+students = int(input("Enter Number of Student: "))
 
-for x in range(10):
+for x in range(students):
     
     print("----- Enter Student Details -----\n")
     roll_no = int(input("Enter student roll No: "))
